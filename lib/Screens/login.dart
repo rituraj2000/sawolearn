@@ -1,8 +1,10 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:sawo/sawo.dart';
 import 'package:sawolearn/Assets/assets.dart';
-import 'package:sawolearn/Models/custom_user.dart';
+import 'package:sawolearn/Models/customUser.dart';
 import 'package:sawolearn/Screens/onboard.dart';
 import 'package:sawolearn/Screens/player_detail.dart';
 
@@ -20,7 +22,6 @@ class _LoginScreenState extends State<LoginScreen> {
     secretKey: MyAssets.sawoSecretkey,
   );
   String user = "";
-
   void payloadCallback(context, payload) {
     if (payload == null || (payload is String && payload.length == 0)) {
       payload = "Login Failed :(";
@@ -33,13 +34,12 @@ class _LoginScreenState extends State<LoginScreen> {
     Navigator.of(context).push(MaterialPageRoute(
         builder: (context) => PlayerDetailsScreen(
               user: userDataFromJson(payload),
+              playerNum: plnum,
             )));
   }
 
   //Generate Random Number for Seriel Number
-  String generateSRLnumber() {
-    return '0 4 6';
-  }
+  int plnum = Random().nextInt(3) + 1;
 
   //Verification Mode Selector
   bool _isphoneselcted = true;
@@ -190,7 +190,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         padding: const EdgeInsets.symmetric(
                             vertical: 5, horizontal: 5),
                         child: const Text(
-                          '0 4 6',
+                          'Player',
                           style: TextStyle(
                             fontSize: 25,
                             fontWeight: FontWeight.w900,
