@@ -1,16 +1,3 @@
-# sawolearn
+![rect833 (1)](https://user-images.githubusercontent.com/83244005/144632369-95fcb183-3bbe-4e1e-a6e2-cad8d4bbbe18.png)
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This is a Flutter front end project I made for SAWO Labs authentication challenge based on Ssquidgame . It was great to know about Sawo labs service which makes it so much easier for quick login and prototyping. I would recommend it to everyone who is making peojects for Hackathons and Completetions. Hope You like it☺️
